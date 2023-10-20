@@ -1,0 +1,42 @@
+.LoginAdmin{
+    height: 69vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AdminCont {
+    border: 3px solid white;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: black;
+}
+.AdminCont input{
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #006f80;
+    font-weight: bold;
+    color: black;
+}
+.AdminCont button{
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: 2px solid #006f80;
+    background-color: #054059;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (width<=480px) {
+    .AdminCont{
+        width: 68%;
+    }
+}

@@ -1,0 +1,62 @@
+/* *{
+    color: white;
+} */
+.footerdiv{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    color: white;
+    background-color: #141414;
+}
+.dev{
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 1.8rem;
+}
+.dev a{
+    color: white;
+}
+.end{
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 16rem;
+}
+.social {
+    font-size: 1.4rem;
+    margin-left: 15.5rem;
+    color: white;
+}
+.scoialImg{
+    font-size: 2.1rem;
+}
+.scoialWord{
+    position: relative;
+    top: -0.5rem;
+}
+@media only screen and (width<= 430px) {
+    .footerdiv {
+        display: flex;
+        height: max-content;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        background-color: #141414;
+        /* margin-top: 1rem; */
+    }
+    .dev {
+        font-size: 1.2rem;
+        margin-left: 0rem;
+        margin-top: 0.7rem;
+    }
+    .end {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-left: 0rem;
+    }
+    .social {
+        font-size: 1.5rem;
+        margin-top: 1.1rem;
+        margin-left: -1rem;
+    }
+  }

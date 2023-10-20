@@ -1,0 +1,50 @@
+.OrderPlaced {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0rem;
+    margin-top: -2rem;
+}
+.OrderPlaced h4{
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+}
+.orderPlacedImg{
+    width: 30%
+}
+.orderplacedbtn{
+    color: white;
+    border: 2px solid red;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+@media only  screen and (width<=430px){
+    .OrderPlaced h4{
+        font-size: 1.3rem;
+        position: relative;
+        top: 1rem;
+    }
+    .OrderPlaced{
+        height: 74vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        gap: 0.5rem;
+        margin-top: 0rem;
+    }
+    .orderPlacedImg{
+        width: 83%;
+    }
+    .orderplacedbtn{
+        color: white;
+        border: 2px solid red;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+}

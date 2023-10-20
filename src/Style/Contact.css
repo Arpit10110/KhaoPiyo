@@ -1,0 +1,95 @@
+#Message{
+    display: none;
+}
+.Contact{
+    height: 27.5vw;
+    background-color: rgb(0, 0, 0);
+    padding-top: 5rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 21vw;
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin: auto;
+    height: 35vh;
+    box-shadow: 0px 0px 5px #9bffec;
+    margin-top: 0rem;
+    border: 0.17rem solid #799290;
+}
+.inputs {
+    width: 21vw;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid rgb(255 234 0);
+    border-radius: 1rem;
+}
+.formbtn{
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    border: 4px soild red;
+    margin: auto;
+    margin-top: 2rem;
+    width: 6vw;
+    font-weight: bold;
+    border: 3px solid #ecff26;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.aofSubmit{
+    display: flex;
+}
+@media only screen and (width<= 430px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 68vw;
+        padding: 2.5rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin: auto;
+        background-color: black;
+        height: 35vh;
+        box-shadow: 0px 0px 5px #9bffec;
+        margin-top: 0rem;
+        border: 0.17rem solid #799290;
+    }
+    .inputs {
+        width: 69vw;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        padding-left: 0.8rem;
+        color: black;
+        font-weight: 700;
+        font-size: 1rem;
+        border: 2px solid rgb(255 234 0);
+        border-radius: 1rem;
+        height: 2.7vh;
+    }
+    .formbtn {
+        color: black;
+        font-size: 1.2rem;
+        padding: 0.2rem;
+        margin: auto;
+        margin-top: 2rem;
+        width: 28vw;
+        font-weight: bold;
+        border: 3px solid #ecff26;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .Contact {
+        height: 124.5vw;
+        background-color: rgb(0, 0, 0);
+        padding-top: 3rem;
+    }
+}

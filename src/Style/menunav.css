@@ -1,0 +1,32 @@
+ .menulinks {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 1.5rem;
+}
+.menulinks a {
+    font-size: 1.1rem;
+    border: 1.5px solid #0dff00;
+    color: #ffffff;
+    background-color: #080808;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    font-family: "Croissant One", cursive;
+}
+@media only screen and (width<=480px) { 
+.menulinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.menulinks a {
+    font-size: 1rem;
+    border: 1.5px solid #0dff00;
+    color: #ffffff;
+    background-color: #080808;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    font-family: "Croissant One", cursive;
+}
+}

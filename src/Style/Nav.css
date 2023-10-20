@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+.navbar {
+  display: flex;
+  height: 17vh;
+  background-color: #0c1013;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: none;
+}
+.close {
+  display: none;
+}
+.carticon {
+  font-size: 2.1rem;
+  margin: auto;
+}
+.cartval {
+  position: relative;
+  top: -1rem;
+}
+.nava {
+    color: rgb(77 255 116);
+  font-size: 1.5rem;
+  font-family: "Croissant One", cursive;
+  margin-left: 2rem;
+}
+.nava:hover {
+  color: rgb(255, 41, 63);
+}
+main {
+  position: absolute;
+  right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoName {
+  font-size: 3rem;
+  color: #ffffed;
+  text-shadow: 1px 1px 3px #f5e4a7;
+  margin-left: 3rem;
+  font-family: "Croissant One", cursive;
+}
+.menu {
+  display: none;
+  width: 8vw;
+}
+.close {
+  display: none;
+  width: 2vw;
+}
+@media only screen and (width <= 430px) {
+  .logoName {
+    font-size: 1.75rem;
+    color: #ffffed;
+    text-shadow: 1px 1px 3px #f5e4a7;
+    margin-left: 2rem;
+    font-family: "Croissant One", cursive;
+  }
+  .menu {
+    display: block;
+    width: 21vw;
+  }
+  main {
+    position: absolute;
+    right: 0rem;
+    height: 80%;
+    top: 1.8rem;
+    border-radius: 4rem 0rem 0rem 3rem;
+    z-index: 5;
+    border: 2px solid black;
+    justify-content: center;
+    width: 46vw;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    background-color: #0c1013;
+  }
+  .close {
+    display: block;
+    /* margin-top: -16rem; */
+    width: 7vw;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .nava {
+    color: rgb(77 255 116);
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
+  .navbar {
+    display: flex;
+    height: 11vh;
+    background-color: #0c1013;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

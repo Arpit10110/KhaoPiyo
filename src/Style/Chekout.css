@@ -1,0 +1,102 @@
+#Message{
+    display: none;
+}
+.payment{
+    font-size: 1.1rem;
+}
+.CheckoutDiv {
+    height: 27.5vw;
+    background-color: rgb(0, 0, 0);
+    padding-top: 3rem;
+}
+.Checkform {
+    display: flex;
+    flex-direction: column;
+    width: 21vw;
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin: auto;
+    height: 37vh;
+    /* margin-bottom: 0rem; */
+    gap: 1.3rem;
+    box-shadow: 0px 0px 5px #9bffec;
+    margin-top: 0rem;
+    border: 0.17rem solid #799290;
+}
+.input {
+    width: 21vw;
+    padding: 0.3rem;
+    padding-left: 0.8rem;
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid rgb(255 255 255);
+    border-radius: 1rem;
+}
+.PTO {
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 4px soild red;
+    margin: auto;
+    width: 11vw;
+    font-weight: bold;
+    color: #ff4747;
+    background-color: #1e1e1e;
+    border: 2px solid #ffffff;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.aofSubmit{
+    display: flex;
+}
+@media only screen and (width<= 430px) {
+    .Checkform {
+        display: flex;
+        flex-direction: column;
+        width: 68vw;
+        padding: 2.5rem;
+        padding-left: 1.5rem;
+        border-radius: 1rem;
+        margin-top: 2rem;
+        margin: auto;
+        background-color: black;
+        height: 55vh;
+        box-shadow: 0px 0px 5px #9bffec;
+        margin-top: 0rem;
+        border: 0.17rem solid #799290;
+    }
+    .input {
+        width: 69vw;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        padding-left: 0.8rem;
+        color: black;
+        font-weight: 700;
+        font-size: 1rem;
+        border: 2px solid rgb(255 255 255);
+        border-radius: 1rem;
+        height: 2.7vh;
+    }
+    .PTO {
+        color: black;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+        margin: auto;
+        margin-top: 0rem;
+        width: 53vw;
+        font-weight: bold;
+        border: 4px soild red;
+        color: #ff4747;
+        background-color: #1e1e1e;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+    .CheckoutDiv {
+        height: 155.5vw;
+        background-color: rgb(0, 0, 0);
+        padding-top: 3rem;
+    }
+}

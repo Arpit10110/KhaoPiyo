@@ -1,0 +1,31 @@
+.LoginSingUp {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    border: 3px solid white;
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: black;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.cont a{
+    color: white;
+    background: #0b3769;
+    padding: 0.5rem;
+    border: 2px solid #7eff7e;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (width<= 480px) {
+    .cont{
+        width: 50%;
+    }
+}
