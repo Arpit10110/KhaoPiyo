@@ -1,24 +1,36 @@
-import React,{useEffect,useState} from 'react'
-import {getDocs,collection} from "firebase/firestore"
+import React,{useEffect,useState,useReducer} from 'react'
+import {getDocs,collection,deleteDoc,doc} from "firebase/firestore"
 import{db} from "../FirebaseConfig"
 import"../Style/Admin.css"
+import { async } from '@firebase/util'
 const Admin = () => {
   const GetCollection=collection(db,"delivery");
+  const [rednerData,forceUpdate]=useReducer(x=>x+1,0);
+  const orderdelivered=async(id)=>{
+    const Id=""+id;
+    deleDoc(Id);
+  }
+  const deleDoc = async(ID)=>{
+     const docdel=doc(db,"delivery",ID);
+    await deleteDoc(docdel);
+  }
   const [Orders,setOrders]=useState([]);
     useEffect(() => {
         document.title="KhaoPiyo | Admin"
         const getdata=async()=>{
           const data =await getDocs(GetCollection);
           setOrders(data.docs.map((doc)=>({...doc.data(),id :doc.id})))
+          forceUpdate();
         }
         getdata();
-        }, [])
+        }, [rednerData])
   return (
    <>
    <div className="AdminDiv">
    <h2 className='Headadmin'>Admin Panel</h2>
    <div className="allOrders">
    {
+    Orders.length>0?
        Orders.map((doc,index)=>{
         return(
           <div key={doc.id} className='datas'>
@@ -36,10 +48,13 @@ const Admin = () => {
                 )
               })
             }
-            <h3>TotalAmount:<span>{doc.TotalAmount}</span></h3>
+            <h3>TotalAmount:<span>₹{doc.TotalAmount}</span></h3>
+            <button onClick={()=>{
+              orderdelivered(doc.id)
+            }}>Order Deliverd</button>
           </div>
         );
-       })
+       }):<h2>No Order !!!</h2>
     }
    </div>
    </div>
