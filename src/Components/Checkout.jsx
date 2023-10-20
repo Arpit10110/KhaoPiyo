@@ -13,6 +13,7 @@ const Contact = () => {
   const [UserPhone,setUserPhone]=useState("");
   const [UserAddress,setUserAddress]=useState("");
   const {cartitem} = useSelector(state=>state.cart)
+  const {totalAmount} = useSelector(state=>state.cart)
   const {cartss} =cartitem
   const CreateCollection=collection(db,"delivery");
   const handleSubmit =(event)=>{
@@ -25,7 +26,8 @@ const Contact = () => {
       Name:UserName, 
       Phone:UserPhone,
       Address:UserAddress,
-      Orders:cartitem
+      Orders:cartitem,
+      TotalAmount:totalAmount
     })
     dispatch({
       type:"delleteall"
