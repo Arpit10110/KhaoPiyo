@@ -6,5 +6,47 @@
     color: #35ff35;
 }
 .AdminDiv{
-    height: 69vh;
+    min-height: 100vh;
+    padding-bottom: 2rem;
+}
+.allOrders {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+.datas{
+    border: 3px solid green;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: auto;
+    gap: 0.2rem;
+}
+@media only screen and (width<=480px) {
+    .allOrders {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .datas {
+        border: 3px solid green;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        gap: 0.2rem;
+    }
 }

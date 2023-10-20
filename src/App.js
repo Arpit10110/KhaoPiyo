@@ -15,12 +15,15 @@ import LoginSingUp from './Components/LoginSingUp';
 import OrderPlaced from './Components/OrderPlaced';
 import LoginAdmin from './Components/LoginAdmin';
 import Admin from './Components/Admin.jsx';
+import ShowNav from './Components/ShowNav.jsx';
 //importing Style
 import "./Style/Style.css"
 const App = () => {
   return (
     <Router>
+      <ShowNav>
       <Navbar/>
+      </ShowNav>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/menu' element={<Menunav/>} >
