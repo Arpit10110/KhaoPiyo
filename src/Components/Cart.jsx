@@ -9,6 +9,7 @@ const Cart = () => {
   const {SubTotal} =useSelector(state=>state.cart);
   const {tax} =useSelector(state=>state.cart);
   const {Shipingprice} =useSelector(state=>state.cart); 
+  const {UserLogin} =useSelector(state=>state.cart); 
   const dispatch = useDispatch();
   const increment=(id)=>{
     dispatch({
@@ -68,7 +69,7 @@ const Cart = () => {
     <h2>Tax ₹{tax}</h2> 
     <h2>Total Amount ₹{totalAmount}</h2>
     {
-      cartitem.length>0? <Link className='chechout' to="/checkout">Checkout</Link>:<span></span>
+      cartitem.length>0?UserLogin==1?<Link className='chechout' to="/checkout">Checkout</Link>:<Link to="/LogInUser" className='chechout'>Please Login</Link>:<span></span>
      
     }
   </div>

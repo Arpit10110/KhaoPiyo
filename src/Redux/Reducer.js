@@ -5,6 +5,11 @@ export const cartreducer = createReducer({
   SubTotal : localStorage.getItem("SubTotal")?localStorage.getItem("SubTotal"): 0,
   tax :localStorage.getItem("tax")?localStorage.getItem("tax"): 0,
   Shipingprice :localStorage.getItem("Shipingprice")?localStorage.getItem("Shipingprice"): 0,
+  UserName:localStorage.getItem("UserName")?localStorage.getItem("UserName"):"",
+  Phone:localStorage.getItem("Phone")?localStorage.getItem("Phone"):"",
+  Address:localStorage.getItem("Address")?localStorage.getItem("Address"):"",
+  Email:localStorage.getItem("Email")?localStorage.getItem("Email"):"",
+  UserLogin:localStorage.getItem("UserLogin")?localStorage.getItem("UserLogin"):0,
 },{
     addtocart :(state ,action)=>{
         const items = action.payload;
@@ -62,5 +67,29 @@ storage:(state)=>{
     },
     delleteall :(state)=>{
       state.cartitem=[];
+    },
+    UserData:(state,action)=>{
+      state.UserName=action.payload.name;
+      state.Phone=action.payload.phone;
+      state.Address=action.payload.address;
+      state.Email=action.payload.email;
+      state.UserLogin=1;
+      localStorage.setItem("UserLogin", state.UserLogin)
+      localStorage.setItem("Email", state.Email)
+      localStorage.setItem("UserName", state.UserName)
+      localStorage.setItem("Phone", state.Phone)
+      localStorage.setItem("Address", state.Address)
+    },
+    LogOut:(state)=>{
+      state.UserName="";
+      state.Phone="";
+      state.Address="";
+      state.Email="";
+      state.UserLogin=0;
+      localStorage.setItem("UserLogin", state.UserLogin)
+      localStorage.setItem("Email", state.Email)
+      localStorage.setItem("UserName", state.UserName)
+      localStorage.setItem("Phone", state.Phone)
+      localStorage.setItem("Address", state.Address)
     }
 }) 

@@ -27,7 +27,6 @@ const Cake = () => {
       progress: undefined,
       theme: "dark",
       });
-      console.log(option);
   }
   return (
     <>

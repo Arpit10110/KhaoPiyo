@@ -1,0 +1,58 @@
+.ProfileDiv{
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProfileCont{
+    border: 3px solid white;
+    display: flex;
+    box-shadow: 0 0 10px 0px #2e713b;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 23%;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+.containerUserLogin input{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    border: navajowhite;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.containerUserLogin button{
+    color: white;
+    border: 1.7px solid;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    background-color: #2424a6;
+}
+.profilebtns{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 0.5rem; */
+}
+.profilebtns a{
+    color: white;
+    border: 2px solid;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    background-color: #1a1ab8;
+}
+@media only screen and (width<=480px) {
+    .ProfileCont{
+        width: 85%;
+        padding: 1rem;
+    }
+    .profilebtns{
+        justify-content: flex-start;
+    }
+}

@@ -56,7 +56,7 @@ const Home = () => {
       <div className="dishCont">
       <h3>Burger</h3>
       Discover vegetarian burger bliss at Khao Piyo. From classic Veggie Cheeseburgers to zesty Spicy Chickpea Burgers, we offer a delightful range of flavors. Best of all, we provide home delivery, making it easy to savor these delicious vegetarian burgers in the comfort of your home. Order now and experience the vegetarian taste sensation at Khao Piyo!
-        <Link to='/menu/buger' className='menulink'>Order Now</Link>
+        <Link to='/menu/burger' className='menulink'>Order Now</Link>
         </div>
     </div>
     <div className="dish">
