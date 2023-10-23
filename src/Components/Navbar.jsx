@@ -15,8 +15,8 @@ const Navbar = () => {
     menuBtn.style="display:none;"
     main.style="display:flex;"
   }
-  console.log(UserLogin)
   function closefun(){
+
     if (window.innerWidth <= 430) {
       let menuBtn=document.querySelector(".menu");
       let main=document.querySelector(".main");
@@ -31,6 +31,9 @@ const Navbar = () => {
         <img className='close'  onClick={closefun} src={close} alt="" />
             <Link onClick={closefun} className='nava'  to="/">Home</Link>
             <Link onClick={closefun} className='nava'  to="/menu/pizza">Menu</Link>
+            {
+              UserLogin==1?<Link onClick={closefun} className='nava'  to="/MyOrder">MyOrder</Link>:<span/>
+            }
             <Link onClick={closefun} className='nava'  to="/Cart"><BiCart className='carticon'/><span className='cartval'>{cartitem.length}</span></Link>
             <Link onClick={closefun} className='nava'  to="/Contact">Contact</Link>
             {

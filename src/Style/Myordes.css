@@ -1,36 +1,20 @@
-.Headadmin {
+.OrderHead{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 2rem;
     color: #34f1ff;
 }
-.PendingOrderhead{
-    text-align: center;
-    color: rgb(255, 44, 44);
-    margin-top: 1.4rem;
-}
-.AdminDiv{
-    min-height: 100vh;
+.MyorderDiv{
+    min-height: 80vh;
     padding-bottom: 2rem;
 }
-.allOrders {
+.MyorderDatas {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.7rem;
     justify-content: center;
     gap: 5rem;
     align-items: center;
-}
-.allOrders button {
-    width: auto;
-    padding: 0.3rem;
-    margin: auto;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    border: 2px solid red;
-    cursor: pointer;
-    margin-top: 0.8rem;
-    background-color: #c9c9c9;
 }
 .datas{
     border: 3px solid green;
@@ -44,10 +28,10 @@
     gap: 0.2rem;
 }
 @media only screen and (width<=480px) {
-    .allOrders {
+    .MyorderDatas {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 3rem;
+        margin-top: 1rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;

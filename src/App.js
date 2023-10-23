@@ -5,6 +5,7 @@ import Home from  "./Components/Home.jsx";
 import Navbar from  "./Components/Navbar.jsx";
 import Footer from './Components/Footer.jsx';
 import Menunav from './Components/Menunav.jsx';
+import MyOrder from './Components/MyOrder.jsx';
 import Pizza from './Components/Pizza.jsx';
 import Cart from './Components/Cart.jsx';
 import Burger from './Components/Burger.jsx';
@@ -34,6 +35,7 @@ const App = () => {
           <Route path='burger' element={<Burger/>}/>
           <Route path='cake' element={<Cake/>}/>
         </Route>
+        <Route path='/MyOrder' element={<MyOrder/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/Cart' element={<Cart/>} />
         <Route path='/checkout' element={<Checkout/>} />

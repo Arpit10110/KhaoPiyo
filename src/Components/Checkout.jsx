@@ -18,7 +18,7 @@ const Contact = () => {
   const CreateCollection=collection(db,"delivery");
   const checkout = async()=>{
     console.log(cartss)
-    addDoc(CreateCollection,{
+    addDoc(CreateCollection,{ 
       Name:UserName, 
       Phone:Phone,
       Address:Address,

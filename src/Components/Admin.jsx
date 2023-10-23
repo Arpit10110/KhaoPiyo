@@ -1,14 +1,26 @@
 import React,{useEffect,useState,useReducer} from 'react'
-import {getDocs,collection,deleteDoc,doc} from "firebase/firestore"
+import {getDocs,collection,deleteDoc,doc,addDoc} from "firebase/firestore"
 import{db} from "../FirebaseConfig"
 import"../Style/Admin.css"
-import { async } from '@firebase/util'
 const Admin = () => {
+  var currentdate = new Date();
+  const [Status,setStatus]=useState("Accept");
   const GetCollection=collection(db,"delivery");
+  const orderCollection=collection(db,"Orders");
   const [rednerData,forceUpdate]=useReducer(x=>x+1,0);
   const orderdelivered=async(id)=>{
     const Id=""+id;
     deleDoc(Id);
+    console.log()
+  }
+  const Submit = (docdeatil)=>{
+     let date=currentdate.getDate()+"-"+(currentdate.getMonth()+1)+"-"+ currentdate.getFullYear();
+     let time=currentdate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+     docdeatil.Date=date;
+     docdeatil.Time=time;
+      docdeatil.status= Status;
+     addDoc(orderCollection,docdeatil);
+     deleDoc(docdeatil.id);
   }
   const deleDoc = async(ID)=>{
      const docdel=doc(db,"delivery",ID);
@@ -28,6 +40,9 @@ const Admin = () => {
    <>
    <div className="AdminDiv">
    <h2 className='Headadmin'>Admin Panel</h2>
+    {
+       Orders.length>0?<h2 className='PendingOrderhead'>Pending Orders..</h2>:<span/>
+    }
    <div className="allOrders">
    {
     Orders.length>0?
@@ -49,12 +64,23 @@ const Admin = () => {
               })
             }
             <h3>TotalAmount:<span>₹{doc.TotalAmount}</span></h3>
+            <div>
+              <label for="Status">Status:</label>
+              <select id="Status" onChange={(e)=>{
+               return(
+                setStatus(e.target.value)
+               ) 
+              }}>
+                 <option value="Accepted" selected>Accept</option>
+                 <option value="Rejected">Reject</option>
+              </select>
+            </div>
             <button onClick={()=>{
-              orderdelivered(doc.id)
-            }}>Order Deliverd</button>
+             Submit(doc)
+            }}>Submit</button>
           </div>
         );
-       }):<h2>No Order !!!</h2>
+       }):<h2>No Pending Order !!!</h2>
     }
    </div>
    </div>
