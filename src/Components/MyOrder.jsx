@@ -45,7 +45,7 @@ const MyOrder = () => {
             }
             <h3>TotalAmount:<span>₹{doc.TotalAmount}</span></h3>
             {
-                doc.status == "Reject"?<h3>Status: <span>🔴{doc.status}</span></h3>:<h3>Status: <span>🟢{doc.status}</span></h3>
+                doc.status == "Rejected"?<h3>Status: <span>🔴{doc.status}</span></h3>:<h3>Status: <span>🟢{doc.status}</span></h3>
             }
           </div>
         );

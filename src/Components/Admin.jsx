@@ -4,7 +4,7 @@ import{db} from "../FirebaseConfig"
 import"../Style/Admin.css"
 const Admin = () => {
   var currentdate = new Date();
-  const [Status,setStatus]=useState("Accept");
+  const [Status,setStatus]=useState("Accepted");
   const GetCollection=collection(db,"delivery");
   const orderCollection=collection(db,"Orders");
   const [rednerData,forceUpdate]=useReducer(x=>x+1,0);
