@@ -15,6 +15,27 @@
     gap: 1rem;
     border-radius: 1rem;
 }
+.PhoneInput {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#Otpdiv {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#Otpdiv button{
+    color: white;
+    cursor: pointer;
+    border: 1.7px solid;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    background-color: #2424a6;
+}
 .containerUserLogin input{
     width: 100%;
     padding: 0.3rem;
