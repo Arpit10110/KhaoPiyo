@@ -27,7 +27,6 @@ const Burger = () => {
       progress: undefined,
       theme: "dark",
       });
-    console.log(option);
   }
   return (
    <>
