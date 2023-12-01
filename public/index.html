@@ -12,9 +12,27 @@
     <link rel="apple-touch-icon" href="./favicon.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Khao Piyo</title>
+    <style>
+      body > .skiptranslate {
+        display: none;
+      }
+
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+      @media print {
+        #google_translate_element {
+          display: none;
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
   </body>
 </html>

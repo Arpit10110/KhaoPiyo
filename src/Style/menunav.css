@@ -13,7 +13,7 @@
     padding: 0.6rem;
     font-family: "Croissant One", cursive;
 }
-@media only screen and (width<=480px) { 
+@media only screen and (width<=600px) { 
 .menulinks {
     display: flex;
     justify-content: center;

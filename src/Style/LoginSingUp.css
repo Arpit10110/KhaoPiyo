@@ -24,7 +24,7 @@
     border-radius: 0.5rem;
 }
 
-@media only screen and (width<= 480px) {
+@media only screen and (width<= 600px) {
     .cont{
         width: 50%;
     }

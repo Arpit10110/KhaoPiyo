@@ -43,7 +43,7 @@
     height: auto;
     gap: 0.2rem;
 }
-@media only screen and (width<=480px) {
+@media only screen and (width<=600px) {
     .allOrders {
         display: flex;
         flex-wrap: wrap;

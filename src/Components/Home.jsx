@@ -16,11 +16,14 @@ import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import {Link} from "react-router-dom"
 import {HashLink} from "react-router-hash-link"
+import Aos from 'aos'
 // Style
 import "../Style/Home.css"
+import 'aos/dist/aos.css'
 const Home = () => {
   useEffect(() => {
     document.title="KhaoPiyo | Home"
+    Aos.init();
   }, [])
   
   return (
@@ -43,7 +46,7 @@ const Home = () => {
     </div>
    </div>
    <div className="dishdiv">
-    <div className="dish">
+    <div data-aos="fade-right"  className="dish">
       <div className="dishCont">
       <h3>Pizza</h3>
         Indulge in vegetarian pizza perfection at Khao Piyo. From the classic Veggie Supreme to the savory Margherita, our pizzas are renowned for their deliciousness. The best part? We offer convenient home delivery, so you can enjoy these delectable pizzas in the comfort of your own space. Satisfy your pizza cravings the vegetarian way at Khao Piyo.
@@ -51,7 +54,7 @@ const Home = () => {
         </div>
       <video className='dishVideo' src={PizzaVideo}  autoPlay={true} muted={true} loop={true}/>
     </div>
-    <div className="Bdish">
+    <div data-aos="fade-right" className="Bdish">
       <video className='dishVideo' src={BurgerVideo}  autoPlay={true} muted={true} loop={true}/>
       <div className="dishCont">
       <h3>Burger</h3>
@@ -59,7 +62,7 @@ const Home = () => {
         <Link to='/menu/burger' className='menulink'>Order Now</Link>
         </div>
     </div>
-    <div className="dish">
+    <div data-aos="fade-right" className="dish">
       <div className="dishCont">
       <h3>Cake</h3>
       Life is sweeter with Khao Piyo's exquisite vegetarian cakes. Each slice, whether it's the classic Chocolate Truffle or the exotic Mango Delight, is a celebration of flavor. And the best part? Our cakes are available for home delivery, making it easy to indulge in vegetarian sweetness. Mark special moments or simply satisfy your sweet tooth with our delightful cakes.

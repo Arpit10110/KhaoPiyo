@@ -35,7 +35,7 @@
     color: white;
     cursor: pointer;
 }
-@media only screen and (width<=480px) {
+@media only screen and (width<=600px) {
     .AdminCont{
         width: 68%;
     }

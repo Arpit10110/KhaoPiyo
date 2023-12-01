@@ -55,7 +55,7 @@ main {
   display: none;
   width: 2vw;
 }
-@media only screen and (width <= 430px) {
+@media only screen and (width <= 600px) {
   .logoName {
     font-size: 1.75rem;
     color: #ffffed;

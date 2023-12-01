@@ -47,7 +47,7 @@
 .aofSubmit{
     display: flex;
 }
-@media only screen and (width<= 430px) {
+@media only screen and (width<= 600px) {
     .form {
         display: flex;
         flex-direction: column;

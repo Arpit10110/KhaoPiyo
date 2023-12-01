@@ -52,7 +52,7 @@
 .aofSubmit{
     display: flex;
 }
-@media only screen and (width<= 430px) {
+@media only screen and (width<= 600px) {
     .Checkform {
         display: flex;
         flex-direction: column;

@@ -52,7 +52,7 @@
     border-radius: 0.4rem;
     background-color: #2424a6;
 }
-@media only screen and (width<=480px) {
+@media only screen and (width<=600px) {
     .containerUserLogin{
         width: 75%;
     }

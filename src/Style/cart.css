@@ -44,7 +44,7 @@
     text-transform: uppercase;
     color: #dacbcb;
 }
-@media only screen and (width <= 430px) {
+@media only screen and (width <= 600px) {
     .cartMain{
         flex-direction: column;
     }

@@ -20,14 +20,11 @@ const MyOrder = () => {
   const [myOrders, setMyOrders] = useState([]);
   const [Pendingorders,setPendingorders]=useState([]);
   const { Phone } = useSelector((state) => state.cart);
- let i=0;
   useEffect(() => {
-    console.log(i);
     document.title = 'KhaoPiyo | MyOrders';
 
     const fetchOrders = async () => {
       try {
-        console.log(i);
         const ordersCollection = collection(db, 'Orders');
         const PendingOrders=collection(db,"delivery");
         const snapshot = await getDocs(ordersCollection);

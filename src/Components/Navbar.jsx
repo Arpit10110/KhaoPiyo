@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import "../Style/Nav.css"
 import menu from "../assets/menu.png"
@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   function closefun(){
 
-    if (window.innerWidth <= 430) {
+    if (window.innerWidth <= 600) {
       let menuBtn=document.querySelector(".menu");
       let main=document.querySelector(".main");
       menuBtn.style="display:block;"

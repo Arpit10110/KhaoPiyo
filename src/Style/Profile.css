@@ -47,7 +47,7 @@
     font-weight: bold;
     background-color: #1a1ab8;
 }
-@media only screen and (width<=480px) {
+@media only screen and (width<=600px) {
     .ProfileCont{
         width: 85%;
         padding: 1rem;

@@ -47,7 +47,7 @@
 .cart-item-del:hover{
     color: rgb(206, 0, 0);
 }
-@media only screen and (width <= 430px) {
+@media only screen and (width <= 600px) {
     .cartMain{
         flex-direction: column;
     }

@@ -32,7 +32,7 @@
     cursor: pointer;
     border: 2px solid white;
 }
-@media only screen and (width <= 480px){
+@media only screen and (width <= 600px){
     .pizzmenu,.bugerdiv,.cakediv{
         display: flex;
         flex-wrap: wrap;
