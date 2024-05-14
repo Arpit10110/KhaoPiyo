@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect} from 'react' 
 import { Link } from 'react-router-dom'
 import "../Style/Nav.css"
 import menu from "../assets/menu.png"
@@ -12,7 +12,7 @@ const Navbar = () => {
   function menuFun(){
     let menuBtn=document.querySelector(".menu");
     let main=document.querySelector(".main");
-    menuBtn.style="display:none;"
+    menuBtn.style="display:none;" 
     main.style="display:flex;"
   }
   function closefun(){
@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
         <Link to="/"><h4 className='logoName'>Khao Piyo<span>🧑‍🍳</span></h4></Link>
-        <main className='main'>
+        <main className='main'> 
         <img className='close'  onClick={closefun} src={close} alt="" />
             <Link onClick={closefun} className='nava'  to="/">Home</Link>
             <Link onClick={closefun} className='nava'  to="/menu/pizza">Menu</Link>

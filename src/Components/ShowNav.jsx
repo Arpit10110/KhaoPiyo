@@ -7,7 +7,7 @@ const ShowNav = ({children}) => {
      if(Loaction.pathname === "/Admin")
      {
         setshownavbar(false);
-     }
+     } 
      else{
         setshownavbar(true);
      }

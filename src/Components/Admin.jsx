@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
+import { 
   getDocs,
   collection,
   deleteDoc,
@@ -92,8 +92,7 @@ const Admin = () => {
                       id="Status"
                       onChange={(e) => {
                         return setStatus(e.target.value);
-                      }}
-                    >
+                      }}>
                       <option value="Accepted" selected>
                         Accept
                       </option>

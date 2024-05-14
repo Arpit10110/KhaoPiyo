@@ -14,7 +14,7 @@ const LogInUser = () => {
     const [UserName,setUserName]=useState("");
     const [Otp,setOtp]=useState();
     const [Phone,setPhone]=useState();
-    const [Address,setAddress]=useState("");
+    const [Address,setAddress]=useState(""); 
     const [Email,setEmail]=useState("");
     // Gentrating Capture
     const gencap =()=>{

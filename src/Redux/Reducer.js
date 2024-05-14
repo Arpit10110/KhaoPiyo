@@ -1,6 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
 export const cartreducer = createReducer({
-  cartitem :localStorage.getItem("cartitem")? JSON.parse(localStorage.getItem("cartitem")) : [],
+  cartitem :localStorage.getItem("cartitem")? JSON.parse(localStorage.getItem("cartitem")) : [], 
   totalAmount :localStorage.getItem("totalAmount")?localStorage.getItem("totalAmount"): 0,
   SubTotal : localStorage.getItem("SubTotal")?localStorage.getItem("SubTotal"): 0,
   tax :localStorage.getItem("tax")?localStorage.getItem("tax"): 0,
@@ -56,7 +56,7 @@ export const cartreducer = createReducer({
         state.Shipingprice=0;
     }
     state.tax=+(state.SubTotal*0.18).toFixed();
-    state.totalAmount=state.SubTotal+state.Shipingprice+state.tax;
+    state.totalAmount=state.SubTotal+state.Shipingprice+state.tax; 
      localStorage.setItem("totalAmount", state.totalAmount)
      localStorage.setItem("SubTotal", state.SubTotal)
      localStorage.setItem("tax", state.tax)
